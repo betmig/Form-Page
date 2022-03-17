@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="">
+    <meta name="author" content="betmig.dev" />
+    <title>Form</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://kit.fontawesome.com/ad57c6f583.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Mukta:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet" />
+    <!-- Bootstrap -->
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://use.fontawesome.com/releases/v5.7.2/css/all.css' rel='stylesheet'>
+     <!-- Core theme CSS (includes Bootstrap)-->
+     <link href="./css/styles.css" rel="stylesheet" />
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#page-top"> Form</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/betmig">GitHub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://betmig.dev">Betmig.Dev</a></li>
+                 </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header--> 
+        <header class="masthead text-center text-white"> 
+        <div class="masthead-content">
+        </div>
+        </header>       
+    <!-- Bubbles in the background -->
+    <div class="bubbles">
+      <div class="circle"></div>
+      <div class="heart"></div>
+      <div class="circle"></div>
+      <div class="heart"></div>
+      <div class="circle"></div>
+      <div class="heart"></div>
+      <div class="circle"></div>
+      <div class="heart"></div>
+    </div>
+
+  <div class="container">
+      <div class="d-flex justify-content-center align-items-center flex-wrap">
+          <div class="content">
+              <!-- Title -->
+              <h1 class="h1 text-white" id="title">Do Androids Dream of Electric Sheep?</h1>
+              <div class="text my-4 text-grey"> <i class="fa fa-info-circle" aria-hidden="true"></i> Disclaimer:
+                 <p class="form-control" id="description"> This is an electronic survey for Androids participating in the AI dream study. If you're human, please disregard. </p>
+              </div>
+              <!-- Form -->
+              <div class="card-form">     
+                <div class="card">
+                    <div class="card-form">
+                        
+                                    <div class="form-group">
+                                        <form id="survey-form" action="/action_page.php">
+                                        <div class="d-flex align-items-center input-field">
+                                            <span class="far fa-regular fa-heart"></span><label for="name" id="name-label">Name:</label><input type="text" id="name" placeholder="..." class="form-control" required>
+                                        </div>
+                                        <div class="d-flex align-items-center input-field">
+                                            <span class="fa fa-birthday-cake"></span><label for="number" id="number-label">Age:</label><input type="number" id="number" placeholder="..." min="18" max="100" class="form-control" required>
+                                        </div>
+                                        <div class="d-flex align-items-center input-field">
+                                            <p> <label for="dreams"><i class="fa fa-cloud" aria-hidden="true"></i>What type of dream did you have?:</label></p>
+                                        <p><select id="dropdown" name="dreams">
+                                            <option value="type-1">Vivid dream</option>
+                                            <option value="type-2">Nonsensical dream</option>
+                                            <option value="type-3">Pleasant dream</option>
+                                            <option value="type-4">No dreams</option>
+                                        </select>
+                                        </p>
+                                     </div>
+                                        
+                                     <div class="d-flex align-items-center input-field">
+                                            <div>
+                                                <p> <i class="fa fa-coffee" aria-hidden="true"></i>  Did you you have tea before sleep time?</p>
+                                                  <input type="radio" id="Chamomile" name="Tea" value="Chamomile tea">
+                                                  <label for="Chamomile">Chamomile tea</label><br>
+                                                  <input type="radio" id="Sleepy" name="Tea" value="Sleepy time tea">
+                                                  <label for="Sleepy">Sleepy time tea</label><br>
+                                                  <input type="radio" id="No-dream" name="Tea" value="I didn't have any">
+                                                  <label for="No-dream">I didn't drink any</label><br><br>
+
+                                                <p> <i class="fa fa-moon-o" aria-hidden="true"></i> Select all that apply to your dream's visuals:</p>
+                                                  <label for="loving"><input id="forest" value="forest" type="checkbox" name="dream-forest"> I saw a forest</label>
+                                                  <label for="lazy"><input id="sea" value="sea" type="checkbox" name="dream-sea"> I saw the sea</label>
+                                                  <label for="darkness"><input id="darkness" value="darkness" type="checkbox" name="dream-darkness"> I saw darkness</label>
+                                                  <label for="colors"><input id="colors" value="colors" type="checkbox" name="dream-colors"> I saw multi colors</label>
+                                                  <label for="visuals"><input id="visuals" value="none" type="checkbox" name="dream-none"> I didn't see anything</label>
+                                                <br><br>
+                                               <label for="text-area">Describe your dream:</label>
+                                               <textarea class="form-control" id="text-area" rows="1" placeholder="..."></textarea>
+                                             </div>
+                                     </div>
+                                     <div class="card-head bg-white">
+                                            <p class="m-0 text-center fs-08">Submit with </p>
+                                            <div class="d-flex align-items-center justify-content-center my-2">
+                                                <div class="btn btn-default"> <img src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png" alt=""> <span>GitHUb</span> </div>
+                                                <div class="btn btn-default mx-3"> <img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt=""> <span>Google</span> </div>
+                                            </div>
+                                        </div>
+                                     <div class="card-form">
+                                            <p class="text-center text-muted fs-08 mt-3">Or submit with credentials</p>
+                                            <div class="d-flex align-items-center input-field"> <span class="far fa-envelope text-muted"></span> <label for="email" id="email-label">Email:</label><input type="email" id="email" placeholder="..." class="form-control" required></div>
+                                            <div class="d-flex align-items-center input-field"> <span class="fas fa-key text-muted"></span> <label for="password" id="password-label">Password:</label><input type="password" placeholder="..." class="form-control" required> </div>
+                                            <div class="d-flex align-items-center"> <input type="checkbox" name="remember" id="remember" value="check"> <label class="text-muted ms-2" for="remember">Remember me</label> </div>
+                                            <div class="d-flex justify-content-center">
+                                     <button class="btn btn-primary mt-3" type="submit" id="submit">Submit</button>
+                           </div>
+                         </form>
+                         </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+     </div>
+ </div>
+  <!-- Footer-->
+  <footer class="py-5 bg-black">
+    <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Betmig 2022</p></div>
+</footer>
+  <!-- Vanilla Tilt JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous"></script>
+  <!-- Bootstrap bundle -->
+  <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
+  <!-- Core theme JS -->
+  <script src="./js/scripts.js"></script> 
+</body>
+</html>
